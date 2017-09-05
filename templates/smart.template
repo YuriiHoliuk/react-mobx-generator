@@ -1,0 +1,23 @@
+import * as React from 'react';
+import { observer } from 'mobx-react';
+
+import {{storeName}} from './{{storeName}}';
+
+const styles: any = require('./{{stylesName}}.scss');
+
+export interface I{{componentName}}Props {
+
+}
+
+@observer
+export default class {{componentName}} extends React.Component<I{{componentName}}Props, {{storeName}}> {
+    private _model: {{storeName}} = new {{storeName}}();
+
+    public render(): JSX.Element {
+        const {  } = this.props;
+
+        return (
+            <div className={ styles.container }>{{componentName}}</div>
+        );
+    }
+}

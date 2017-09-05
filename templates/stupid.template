@@ -1,0 +1,19 @@
+import * as React from 'react';
+import { observer } from 'mobx-react';
+
+const styles: any = require('./{{stylesName}}.scss');
+
+export interface I{{componentName}}Props {
+
+}
+
+const {{componentName}}: (props: I{{componentName}}Props) => JSX.Element = (props) => {
+    const {  } = props;
+
+    return (
+        <div className={ styles.container }>{{componentName}}</div>
+    );
+
+};
+
+export default observer({{componentName}});
